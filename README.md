@@ -23,8 +23,8 @@
 ├app.json<br>
 ├app.wxss<br>
 ├jsconfig.json<br>
-├project.config.json<br>                    // 项目配置文件
-├&lt;images&gt;<br>                         // 图片资源
+├project.config.json                   // 项目配置文件<br> 
+├&lt;images&gt;                        // 图片资源<br> 
 │&nbsp;&nbsp;&nbsp;&nbsp;├add.png<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;├avator.jpg<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;├loading.png<br>
@@ -35,22 +35,22 @@
 │&nbsp;&nbsp;&nbsp;&nbsp;├user-info.png<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;└user-info-selected.png<br>
 ├&lt;pages&gt;<br>                       
-│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;index&gt;<br>    // 主页
+│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;index&gt;    // 主页<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├index.js<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├index.json<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├index.wxml<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└index.wxss<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;newOrder&gt;<br>    // 新建订单页
+│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;newOrder&gt;    // 新建订单页<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├newOrder.js<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├newOrder.json<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├newOrder.wxml<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└newOrder.wxss<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;userInfo&gt;<br>     // 个人中心页
+│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;userInfo&gt;     // 个人中心页<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├userInfo.js<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├userInfo.json<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├userInfo.wxml<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;└userInfo.wxss<br>
-│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;welcome&gt;<br>     // 欢迎页
+│&nbsp;&nbsp;&nbsp;&nbsp;├&lt;welcome&gt;     // 欢迎页<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├welcome.js<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├welcome.json<br>
 │&nbsp;&nbsp;&nbsp;&nbsp;│&nbsp;&nbsp;&nbsp;&nbsp;├welcome.wxml<br>

@@ -1,0 +1,91 @@
+<!-- pages/index/index.wxml -->
+<image class="add-tab" src="/images/add.png"></image>
+<view class="top-tab flexItem flex-tab">
+    <view class="toptab flex-item {{currentNavtab==idx ? 'active':''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:key="unique" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">{{itemName}}</view>
+</view>
+<view class="tab-container flexItem {{currentNavtab==0 ? 'list_active0' : ''}} {{currentNavtab==1 ? 'list_active1' : ''}} {{currentNavtab==2 ? 'list_active2' : ''}}">
+    <view class="view1 scroll-container" bindtouchstart="catchtouchstart" bindtouchend="catchtouchend">
+        <scroll-view scroll-y="{{true}}" scroll-x="{{false}}" wx:if="{{hasInfo}}" wx:for="{{orderInfo}}" wx:for-index="idx" wx:for-item="item">
+                <view class="order-container">
+                    <view class="order-id-container border-bottom-dashed3">
+                        <image class="order-id-image" src="/images/order-management.png" />
+                        <text class="order-id">订单编号：{{item.orderNum}}-1</text>
+                    </view>
+                    <view class="order-detial-container border-bottom-dashed2 flexItem">
+                        <view class="order-detial">
+                            <label>{{item.contact}}</label>
+                            <text>{{item.phone}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>项目</label>
+                            <text>{{item.projectName}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>创建时间</label>
+                            <text>{{item.createdTime}}</text>
+                        </view>
+                    </view>
+                    <view class="order-case-container">
+                        <image class="order-case-image" src="{{statusImage[item.status]}}" />
+                        <text class="order-status">{{statusText[item.status]}}</text>
+                    </view>
+                </view>
+        </scroll-view>
+    </view>
+    <view class="view2 scroll-container" bindtouchstart="catchtouchstart" bindtouchend="catchtouchend">
+        <scroll-view scroll-y="{{true}}" scroll-x="{{false}}" wx:if="{{hasInfo && item.status == 0}}" wx:for="{{orderInfo}}" wx:for-index="idx" wx:for-item="item">
+                <view class="order-container">
+                    <view class="order-id-container border-bottom-dashed3">
+                        <image class="order-id-image" src="/images/order-management.png" />
+                        <text class="order-id">订单编号：{{item.orderNum}}-2</text>
+                    </view>
+                    <view class="order-detial-container border-bottom-dashed2 flexItem">
+                        <view class="order-detial">
+                            <label>{{item.contact}}</label>
+                            <text>{{item.phone}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>项目</label>
+                            <text>{{item.projectName}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>创建时间</label>
+                            <text>{{item.createdTime}}</text>
+                        </view>
+                    </view>
+                    <view class="order-case-container">
+                        <image class="order-case-image" src="{{statusImage[item.status]}}" />
+                        <text class="order-status">{{statusText[item.status]}}</text>
+                    </view>
+                </view>
+        </scroll-view>
+    </view>
+    <view class="view3 scroll-container" bindtouchstart="catchtouchstart" bindtouchend="catchtouchend">
+        <scroll-view scroll-y="{{true}}" scroll-x="{{false}}" wx:if="{{hasInfo && item.status == 1}}" wx:for="{{orderInfo}}" wx:for-index="idx" wx:for-item="item">
+                <view class="order-container">
+                    <view class="order-id-container border-bottom-dashed3">
+                        <image class="order-id-image" src="/images/order-management.png" />
+                        <text class="order-id">订单编号：{{item.orderNum}}-3</text>
+                    </view>
+                    <view class="order-detial-container border-bottom-dashed2 flexItem">
+                        <view class="order-detial">
+                            <label>{{item.contact}}</label>
+                            <text>{{item.phone}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>项目</label>
+                            <text>{{item.projectName}}</text>
+                        </view>
+                        <view class="order-detial">
+                            <label>创建时间</label>
+                            <text>{{item.createdTime}}</text>
+                        </view>
+                    </view>
+                    <view class="order-case-container">
+                        <image class="order-case-image" src="{{statusImage[item.status]}}" />
+                        <text class="order-status">{{statusText[item.status]}}</text>
+                    </view>
+                </view>
+        </scroll-view>
+    </view>
+</view>

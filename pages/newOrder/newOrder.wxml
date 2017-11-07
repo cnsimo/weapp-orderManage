@@ -1,0 +1,23 @@
+<!--pages/newOrder/newOrder.wxml-->
+<view class="container displayFlex">
+    <view class="margin-top10 view1 height44 borderBottom1r">
+        <label class="font-size14 floatLeft margin-left12 normalColor lineHeight44">订单编号</label>
+        <input class="normalColor font-size14 floatRight margin-right12 margin-top10 lineHeight44" placeholder="请输入姓名" placeholder-style="color:#ccc;" type="text"/>
+    </view>
+    <view class="view1 height44 borderBottom1r">
+        <label class="font-size14 floatLeft margin-left12 normalColor lineHeight44">商品名称</label>
+        <input class="normalColor font-size14 floatRight margin-right12 lineHeight44" placeholder="请输入姓名" placeholder-style="color:#ccc;" type="text"/>
+    </view>
+    <view class="view1 height44 borderBottom1r">
+        <label class="font-size14 floatLeft margin-left12 normalColor lineHeight44">商家名称</label>
+        <input class="normalColor font-size14 floatRight margin-right12 lineHeight44" placeholder="请输入姓名" placeholder-style="color:#ccc;" type="text"/>
+    </view>
+    <view class="view1 height44 borderBottom1r">
+        <label class="font-size14 floatLeft margin-left12 normalColor lineHeight44">商家地址</label>
+        <input class="normalColor font-size14 floatRight margin-right12  lineHeight44" placeholder="请输入姓名" placeholder-style="color:#ccc;" type="text"/>
+    </view>
+
+    <view class="view2 height44">
+        <button class="depositBtn  lineHeight44" form-type="submit" bindtap="onTap">确认</button>
+    </view>
+</view>

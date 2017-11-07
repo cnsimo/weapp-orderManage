@@ -1,0 +1,163 @@
+/*common css*/
+page {
+    background-color:#f0f0f0;
+}
+.flexItem {
+    display: flex;
+}
+
+/*diff*/
+.order-container {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+    margin-bottom: 10rpx;
+}
+.flex-tab {
+    flex-flow: row nowrap;   /*flex-direction和flex-wrap（是否换行）的复合属性*/
+    justify-content: center;  /*元素之间的留白*/
+    align-items: center;
+}
+.top-tab {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    background: white;
+    font-size: 28rpx;
+    box-shadow: 0 2px 2px #bebebe;
+	position: fixed;
+    z-index: 999;
+}
+.toptab {
+    border-bottom: solid 3px transparent;
+    transition: all 0.4s ease-in-out;    
+}
+.flex-item {
+    flex-grow: 1;
+    text-align: center;
+}
+.active {
+    color: #ff4444;
+    border-bottom: solid 3px #ff4444;
+    font-weight: bold;
+}
+
+.order-id-container {
+    background-color: #fff;
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: center;
+}
+
+.order-id-image {
+    position: relative;
+    top: 4px;
+    width: 28rpx;
+    height: 28rpx;
+}
+
+.order-id {
+    font-size: 28rpx;
+    padding-left: 14px;
+}
+
+.order-detial-container {
+    background-color: #fff;
+    width: 100%;
+	height: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.order-detial {
+    width: 100%;
+}
+
+.order-detial label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 28rpx;
+}
+
+.order-detial text {
+    display: inline-block;
+    width: 50%;
+    text-align: right;
+    font-size: 28rpx;
+}
+
+.order-case-container {
+    background-color: #fff;
+    width: 100%;
+	height: 36px;
+	line-height: 40px;
+    text-align: center;
+}
+
+.order-case-image {
+    position: relative;
+    top: 4rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+
+.border-bottom-dashed2 {
+    border-bottom: dashed 2px #bebebe;
+}
+
+.border-bottom-dashed3 {
+    border-bottom: dashed 3px #bebebe;
+}
+
+.order-status {
+    margin-left: 14px;
+    font-size: 32rpx;
+    color: #bfb4bf;
+}
+
+.scroll-container {
+    width: 33.333%;
+    display: flex;
+	flex-direction: column;
+    margin-top: 110rpx;
+}
+
+.tab-container {
+    width: 300%;
+    left: 0;
+    flex-direction: row;
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s  ease-in-out; /* Firefox 4 */
+    -webkit-transition: all 0.4s ease-in-out; /* Safari 和 Chrome */
+    -o-transition: all 0.4s  ease-in-out; /* Opera */
+}
+
+.list_active0{
+	position: absolute;
+    margin-left:0;
+	margin-right:200%;
+}
+
+.list_active1{
+	position: absolute;
+    margin-left:-100%;
+	margin-right:100%;
+}
+
+.list_active2{
+	position: absolute;
+    margin-left:-200%;
+	margin-right:0;
+}
+
+.add-tab {
+	z-index: 1000;
+	bottom: 30rpx;
+	right: 30rpx;
+	position: fixed;
+	width: 100rpx;
+	height: 100rpx;
+}

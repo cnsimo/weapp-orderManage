@@ -15,6 +15,7 @@
 4. 新建完成
 
 ########### 目录结构描述
+
 ├README.md                                      // help
 ├LICENSE
 ├jsconfig.json
@@ -32,7 +33,7 @@
 │  ├over.png
 │  ├user-info.png
 │  └user-info-selected.png
-├<pages>					  // 页面文件夹
+├<pages>					       // 页面文件夹
 │  ├<index>					     // 订单选项卡
 │  │  ├index.js
 │  │  ├index.json
@@ -43,7 +44,7 @@
 │  │  ├newOrder.json
 │  │  ├newOrder.wxml
 │  │  └newOrder.wxss
-│  ├<userInfo>			                 // 个人中心
+│  ├<userInfo>			      // 个人中心
 │  │  ├userInfo.js
 │  │  ├userInfo.json
 │  │  ├userInfo.wxml

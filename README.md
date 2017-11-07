@@ -16,9 +16,7 @@
 4. 新建完成
 
 ########### 目录结构描述
-
-&lt;weapp-orderManage&gt;<br>
-├README.md---------------help<br>
+> ├README.md---------------help<br>
 ├LICENSE<br>
 ├app.js<br>
 ├app.json<br>

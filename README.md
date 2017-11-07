@@ -17,40 +17,78 @@
 ########### 目录结构描述
 
 ├README.md                                      // help
+
 ├LICENSE
+
 ├jsconfig.json
+
 ├project.config.json                           // 小程序项目配置文件
+
 ├app.js
+
 ├app.json
+
 ├app.wxss
+
 ├<images>					// 图片资源
+  
 │  ├add.png
+
 │  ├avator.jpg
+
 │  ├loading.png
+
 │  ├order.png
+
 │  ├order-management.png
+
 │  ├order-selected.png
+
 │  ├over.png
+
 │  ├user-info.png
+
 │  └user-info-selected.png
+
 ├<pages>					       // 页面文件夹
+  
 │  ├<index>					     // 订单选项卡
+  
 │  │  ├index.js
+
 │  │  ├index.json
+
 │  │  ├index.wxml
+
 │  │  └index.wxss
+
 │  ├<newOrder>				    // 新建订单
+  
 │  │  ├newOrder.js
+
 │  │  ├newOrder.json
+
 │  │  ├newOrder.wxml
+
 │  │  └newOrder.wxss
+
 │  ├<userInfo>			      // 个人中心
+  
 │  │  ├userInfo.js
+
 │  │  ├userInfo.json
+
 │  │  ├userInfo.wxml
+
 │  │  └userInfo.wxss
+
 │  ├<welcome>				     // 欢迎页
+  
 │  │  ├welcome.js
+
 │  │  ├welcome.json
+
 │  │  ├welcome.wxml
+
 │  │  └welcome.wxss
+

@@ -1,0 +1,61 @@
+<!--pages/AAA/AAA.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="myicon">
+    <image bindtap="modifymyicon" src="{{avatarUal}}"></image>
+  </view>
+
+  <view class="inputs">
+    <view class="title">昵称</view>
+    <view>
+      <input bindinput="nickname"name="nickname" value="{{nickname}}" disabled="{{bin}}" focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <!--
+<view class="inputs">
+  <view class="title">性别</view>
+  <view><input bindinput="sex"value="{{sex}}"disabled="{{bin}}"/></view>
+</view>
+<view class="hr"></view>
+-->
+
+  <view class="inputs">
+    <view class="title">微信号</view>
+    <view>
+      <input bindinput="openid" value="{{openid}}" disabled="{{bin}}" focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="hr"></view>
+
+
+  <view class="inputs">
+    <view class="title">真实姓名</view>
+    <view>
+      <input bindinput="fullname" value="{{fullname}}" disabled="{{bin}}" focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="hr"></view>
+
+
+  <view class="inputs">
+    <view class="title">手机号</view>
+    <view>
+      <input bindinput="phone" value="{{phone}}" disabled="{{bin}}" focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="hr"></view>
+
+
+  <view class="inputs">
+    <view class="title">员工id</view>
+    <view>
+      <input bindinput="id" value="{{id}}" disabled="{{bin}}" focus="{{focus}}" />
+    </view>
+  </view>
+  <view class="hr"></view>
+
+  <button class="button" bindtap="setbin">修改资料</button>
+  <button class="button" formType="submit" bindtap="ctrls" hidden="{{hidden}}">保存</button>
+ <button class="button" formType="reset"  hidden="{{hidden}}">重置</button>
+</form>

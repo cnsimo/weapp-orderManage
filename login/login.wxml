@@ -1,0 +1,22 @@
+<!--pages/login/login.wxml-->
+<view  >
+<form  bindsubmit='formSubmit'>
+    <view class="row">
+    <image src='/pages/Image/人.png ' class='imgBtn'></image>
+      <text>帐 号：</text>
+      <input type="text" name="userName" placeholder="请手机号" value="{{userName}}" maxlength='11' />
+    </view>
+    <view class="row">
+    <image src='/pages/Image/锁.png ' class='imgBtn'></image>
+      <text>密 码：</text>
+      <input type="password" name="userPassword" placeholder="输入密码" value="{{userPassword}}" />
+    </view>
+      <view class="row">
+        <button type='primary'  form-type='submit' >登陆</button>
+      </view>
+      <view>
+        <picker class='tex ' bindchange="bindPickerChange" value='indxe' range='{{array}}'>忘记密码</picker>
+        <text class='tex'  bindtap='ontap'> 新用户注册</text>   
+    </view>
+    </form>
+</view>

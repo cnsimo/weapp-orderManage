@@ -2,7 +2,7 @@
 <view class="container">
     <image class="user-avator" src="/images/avator.jpg"></image>
     <text class="user-name">Hello, WeChat</text>
-    <navigator class="moto-container" url="../index/index" open-type="switchTab">
+    <navigator class="moto-container" url="../login/login" open-type="redirect">
         <text class="moto" bindtap='getUserInfo'>开启小程序</text>
     </navigator>
 </view>

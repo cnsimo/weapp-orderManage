@@ -1,1 +1,114 @@
 /* pages/userInfo/userInfo.wxss */
+page {
+    background-color:#f0f0f0;
+}
+.user-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    background: #fff;
+    width: 100%;
+    height: 100px;
+}
+
+.user-avator{
+    width: 80px;
+    height: 80px;
+	margin: 10px 20px;
+}
+
+.user-name-id-container {
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    line-height: 40px;
+	margin: 10px 0;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.user-id {
+    color: #808080;
+    font-size: 16px;
+}
+
+.stat-order-container {
+    width: 100%;
+    height: 240px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.stat-all-order {
+    margin-top: 20px;
+    width: 100%;
+    height: 140px;
+    background: #759ef9;
+}
+
+.stat-detail-order {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+}
+
+.stat-doing {
+    background: #90cbd9;
+    width: 50%;
+}
+
+.stat-done {
+    background: #cf004f;
+    width: 50%;
+}
+
+.stat-all-order label {
+    font-size: 48px;
+    color: white;
+    line-height: 140px;
+}
+
+.stat-all-order text {
+    font-size: 72px;
+    margin-left: 20px;
+}
+
+.stat-detail-order label {
+    font-size: 24px;
+    color: white;
+    line-height: 90px;
+}
+
+.stat-detail-order text {
+    font-size: 48px;
+    margin-left: 10px;
+}
+
+.other-options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.other-options-container view {
+    background: white;
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.other-options-container label {
+	margin-left: 10px;
+}
+
+.about-help-option {
+    margin-top: 20px;
+}

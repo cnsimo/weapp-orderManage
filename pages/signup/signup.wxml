@@ -1,0 +1,52 @@
+<view class="cent">
+ <form  bindsubmit='formSubmit'>
+  <view class='container'>
+    <view>
+    <image src='/images/star1.png '></image>
+      <text>真实姓名</text>
+      <input name='fullname' placeholder='必填'   ></input>
+    </view>
+    <view>
+    <image src='/images/star1.png '></image>
+      <text>员工编号</text>
+      <input placeholder='必填' name='id' ></input>
+    </view>
+  </view>
+  <view class='container'>
+    <view>
+    <image src='/images/star1.png '></image>
+      <text>注册帐号</text>
+      <input placeholder='必填' name='phone'  value='{{phone}}'> {{phone}}</input>
+    </view>
+    <view>
+    <image src='/images/star1.png '></image>
+      <text>设置密码</text>
+      <input placeholder='必填' name='password'></input>
+    </view>
+    <view>
+    <image src='/images/star1.png '></image>
+      <text>重复密码</text>
+      <input placeholder='必填' name='password'></input>
+    </view>
+  </view>
+  <view class='container' >
+  <view>
+  <image src='/images/star1.png '></image>
+    <text>添加备注</text>
+    <input placeholder='必填' name=''></input>
+  </view>
+  </view>
+
+<view class='container'> 
+     <picker bindchange='bindPickerChange' value='index' range='{{arrayshenfen}}'>
+          <label>请选择身份</label>
+       </picker>
+     </view>
+
+  <view>
+  <button type='primary' form-type='submit'>提交</button>
+  </view>
+  </form>
+</view>
+
+     

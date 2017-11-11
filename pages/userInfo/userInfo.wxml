@@ -1,1 +1,40 @@
-<!--pages/userInfo/userInfo.wxml-->
+<!-- pages/userInfo/userInfo.wxml -->
+<view class='user-container' bindtap="changeUserInfo">
+	<image class='user-avator' src="{{userinfo.avatorUrl}}"></image>
+	<view class='user-name-id-container'>
+		<label class="user-name">{{userinfo.fullname}}</label>
+		<label class="user-id">员工ID：{{userinfo.id}}</label>
+	</view>
+</view>
+
+<view class="stat-order-container">
+	<view class="stat-all-order" bindtap="viewAllOrder">
+		<label>全部</label>
+		<text>{{allOrderNum}}</text>
+	</view>
+	<view class="stat-detail-order">
+		<view class="stat-doing" bindtap="viewDoingOrder">
+			<label>进行中</label>
+			<text>{{doingOrderNum}}</text>
+		</view>
+		<view class="stat-done" bindtap="viewDoneOrder">
+			<label>已完成</label>
+			<text>{{doneOrderNum}}</text>
+		</view>
+	</view>
+</view>
+
+<view class="other-options-container">
+	<view class="update-password-option" bindtap="changePassword">
+		<label>修改密码</label>
+	</view>
+	<view class="contact-admin-option" bindtap="contactAdmin">
+		<label>联系管理员</label>
+	</view>
+	<view class="login-out-option" bindtap="loginout">
+		<label>退出登录</label>
+	</view>
+	<view class="about-help-option" bindtap="viewAboutAndHelp">
+		<label>关于与帮助</label>
+	</view>
+</view>

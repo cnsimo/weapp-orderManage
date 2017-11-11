@@ -45,7 +45,7 @@ Page({
   },
    ontap:function(){
    wx.navigateTo({
-     url: '../logs/logs',
+     url: '../signup/signup',
    })
    },
   //加载完后，处理事件 

@@ -1,7 +1,7 @@
-<!--pages/AAA/AAA.wxml-->
+
 <form bindsubmit="formSubmit" bindreset="formReset">
   <view class="myicon">
-    <image bindtap="modifymyicon" src="{{avatarUal}}"></image>
+    <image bindtap="modifymyicon" src="{{avatorUrl}}"></image>
   </view>
 
   <view class="inputs">

@@ -1,9 +1,13 @@
 {
     "pages": [
         "pages/welcome/welcome",
+		"pages/login/login",
+		"pages/signup/signup",
+		"pages/changeUserInfo/changeUserInfo",
         "pages/index/index",
         "pages/userInfo/userInfo",
-        "pages/newOrder/newOrder"
+        "pages/newOrder/newOrder",
+		"pages/changePass/changePass"
     ],
     "window": {
         "backgroundTextStyle": "light",

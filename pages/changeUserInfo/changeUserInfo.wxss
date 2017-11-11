@@ -1,0 +1,49 @@
+/* pages/AAA/AAA.wxss */
+
+
+
+.myicon{
+width:100%;
+height:10rem;
+line-height: 4.5rem;
+
+
+}
+
+.myicon image{
+padding-top: 150rpx;
+padding-bottom: 10rpx;
+width: 200rpx;
+height: 200rpx;
+margin-left: 290rpx;
+margin-right: 250rpx;
+}.blank{
+height: 40rpx;
+
+}
+.inputs{
+display: flex;
+flex-direction: row;
+margin-left: 20px;
+margin-top: 20px;
+margin-bottom:10px;
+width: 90%;
+}
+.title{
+margin-right: 30px;
+font-weight: blod;
+width: 30%;
+}
+.hr{
+border:1px solid #cccccc;
+opacity: 0.2;
+width: 90%;
+margin:0 auto;
+}
+
+.button{
+margin-top: 50rpx;
+width: 80%;
+background-color: #ff4444;
+color: white;
+}

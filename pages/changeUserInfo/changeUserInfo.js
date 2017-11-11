@@ -1,11 +1,11 @@
-// pages/AAA/AAA.js
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    avatarUal: "/images/img/u3.png",
+    avatorUrl: "/images/avator.jpg",
     nickname: "中国移动",
     //sex:"",
     openid: "中国移动10086",

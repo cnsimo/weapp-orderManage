@@ -1,0 +1,52 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}
+.cent image{
+width: 10px;
+height: 10px;
+margin-right: 4px;
+}
+.cent text{
+color: #8e7c8f;
+right: 0px;
+}
+.cent input{
+position: relative;
+top: 5px;
+margin-left: 30px;
+border-bottom:1px solid  #0099CC;
+display: inline-block;
+}
+.cent button{
+background-color:  #33b6ff;
+position: relative;
+top: 50px;
+padding: 0 2rem;
+width: 90%;
+align-items: center;
+border-bottom:1px solid  #0099CC;
+
+}
+
+
+
+.cent label{
+  position: relative;
+  border-radius: 1px solid  #0099CC;
+}
+.container {
+  margin-top: 10px;
+  background: #fff;
+   padding: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+page {
+  background-color: #edebf2;
+}

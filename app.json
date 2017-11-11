@@ -1,35 +1,38 @@
 {
-    "pages": [
-        "pages/welcome/welcome",
-		"pages/login/login",
-		"pages/signup/signup",
-		"pages/changeUserInfo/changeUserInfo",
-        "pages/index/index",
-        "pages/userInfo/userInfo",
-        "pages/newOrder/newOrder",
-		"pages/changePass/changePass"
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/login/login",
+    "pages/signup/signup",
+    "pages/changeUserInfo/changeUserInfo",
+    "pages/index/index",
+    "pages/userInfo/userInfo",
+    "pages/newOrder/newOrder",
+    "pages/changePass/changePass",
+    "pages/weizhifu/weizhifu",
+    "pages/quanbuxinxi/quanbuxinxi",
+    "pages/yizhifu/yizhifu"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff4444",
+    "navigationBarTitleText": "业务订单管理",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "订单",
+        "iconPath": "images/order.png",
+        "selectedIconPath": "images/order-selected.png"
+      },
+      {
+        "pagePath": "pages/userInfo/userInfo",
+        "text": "我的",
+        "iconPath": "images/user-info.png",
+        "selectedIconPath": "images/user-info-selected.png"
+      }
     ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#ff4444",
-        "navigationBarTitleText": "业务订单管理",
-        "navigationBarTextStyle": "black"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "text": "订单",
-                "iconPath": "images/order.png",
-                "selectedIconPath": "images/order-selected.png"
-            },
-            {
-                "pagePath": "pages/userInfo/userInfo",
-                "text": "我的",
-                "iconPath": "images/user-info.png",
-                "selectedIconPath": "images/user-info-selected.png"
-            }
-        ],
-        "selectedColor": "#ff0000"
-    }
+    "selectedColor": "#ff0000"
+  }
 }

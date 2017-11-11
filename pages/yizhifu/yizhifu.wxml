@@ -1,0 +1,53 @@
+<!--index.wxml-->
+<view class="content">
+<!--全部的支付信息-->
+ <view class="info">
+ <!--全部支付信息的总数 当前日期-->
+ <view class="num">{{num}}({{all}})</view>
+<!--全部信息-->
+<view class="title">{{quanbu.timu}}</view>
+<!--提示-->
+<view class="qita">{{quanbu.tishi}}</view>
+</view>
+
+<!--警报-->
+<view class="jingbao">
+ <view class="detail"><text class="jingbao-title"></text>
+ {{quanbu.tieshi}}<!--警报内容--></view>
+ </view>
+
+<!--具体信息-->
+<view class="xinxi-title">
+  <view class="everyday" wk:key="{{index}}" wx:for="{{quanbu.xinxi1}}">
+   <!--姓名-->
+   <view class="detail date">姓名：{{item.name}}</view>
+   <!--订单编号-->
+  <view class="detail">订单编号：{{item.bianhao}}</view>
+   <!--时间-->
+  <view class="detail">时间：{{item.shijian}}</view>
+   <!--信息-->
+  <view class="detail">项目：{{item.chucun}}</view>
+  </view>
+ </view>
+
+ <!--具体信息-->
+<view class="xinxi-title">
+  <view class="everyday" wk:key="{{index}}" wx:for="{{quanbu.xinxi2}}">
+   <!--姓名-->
+   <view class="detail date">姓名：{{item.name}}</view>
+   <!--订单编号-->
+  <view class="detail">订单编号：{{item.bianhao}}</view>
+   <!--时间-->
+  <view class="detail">时间：{{item.shijian}}</view>
+   <!--信息-->
+  <view class="detail">项目：{{item.chucun}}</view>
+  </view>
+ </view>
+
+
+ <!--搜索-->
+ <view class="search-area">
+    <input bindinput="inputing" placeholder="请输入姓名" value="{{inputName}}"  />
+    <button type="primary"size="mini"bindtap="bindSearch">查询 </button>
+ </view>
+</view>

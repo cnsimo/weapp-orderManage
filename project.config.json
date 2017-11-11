@@ -8,7 +8,7 @@
 	},
 	"compileType": "weapp",
 	"libVersion": "1.6.0",
-	"appid": "小程序的AppID",
+	"appid": "touristappid",
 	"projectname": "demo2",
 	"condition": {
 		"weapp": {

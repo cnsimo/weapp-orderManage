@@ -1,0 +1,19 @@
+
+<view class="container">   
+   
+    <text>原密码</text>
+    <input type="text" bindinput="userNameInput" password="true"/>  
+
+    <text>新密码</text>
+    <input type="text" bindinput="userPasswordInput" password="true"/>  
+
+    <text>确认ta</text>
+    <input  bindinput="userPasswordInput" password="true"/>  
+
+
+</view>
+
+  <view class="usermotto"> 
+    <button bindtap="logIn">确定</button>  
+
+  </view>  

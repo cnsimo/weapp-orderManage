@@ -19,7 +19,7 @@
 
 
 ## ######### 目录结构描述
-&gt; &lt;weapp-orderManage&gt;
+> &lt;weapp-orderManage&gt;
 <br>├LICENSE
 <br>├README.md
 <br>├&lt;client&gt;

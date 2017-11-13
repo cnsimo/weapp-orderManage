@@ -32,7 +32,7 @@ Page({
 
   viewAllOrder: function () {
     wx.navigateTo({
-      url: "",
+      url: "../quanbuxinxi/quanbuxinxi",
       success: function () {
         console.log('跳转到页面成功');
       },
@@ -44,7 +44,7 @@ Page({
 
   viewDoingOrder: function () {
     wx.navigateTo({
-      url: "",
+      url: "../yizhifu/yizhifu",
       success: function () {
         console.log('跳转到页面成功');
       },
@@ -56,7 +56,7 @@ Page({
 
   viewDoneOrder: function () {
     wx.navigateTo({
-      url: "",
+      url: "../weizhifu/weizhifu",
       success: function () {
         console.log('跳转到页面成功');
       },

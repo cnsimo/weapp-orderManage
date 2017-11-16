@@ -1,5 +1,5 @@
 <!-- pages/index/index.wxml -->
-<image class="add-tab" src="/images/add.png"></image>
+<image class="add-tab" src="/images/add.png" bindtap="addNewOrder"></image>
 <view class="top-tab flexItem flex-tab">
     <view class="toptab flex-item {{currentNavtab==idx ? 'active':''}}" wx:for="{{navTab}}" wx:for-index="idx" wx:key="unique" wx:for-item="itemName" data-idx="{{idx}}" bindtap="switchTab">{{itemName}}</view>
 </view>

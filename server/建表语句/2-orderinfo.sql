@@ -1,16 +1,16 @@
 /*
 Navicat MySQL Data Transfer
 
-Source Server         : STDSERVER
-Source Server Version : 50720
-Source Host           : www.stdserver.cn:3306
+Source Server         : wamp
+Source Server Version : 50714
+Source Host           : localhost:3306
 Source Database       : weapp
 
 Target Server Type    : MYSQL
-Target Server Version : 50720
+Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-11-12 02:22:56
+Date: 2017-11-20 01:07:14
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,9 +27,14 @@ CREATE TABLE `orderinfo` (
   `company` varchar(20) NOT NULL COMMENT '业务公司',
   `address` varchar(45) DEFAULT NULL COMMENT '业务地址',
   `contact` char(11) NOT NULL COMMENT '联系电话',
-  `ownerID` int(11) NOT NULL COMMENT '业务员ID',
+  `ownerPhone` char(11) NOT NULL COMMENT '业务员手机号',
   `status` int(11) NOT NULL COMMENT '跟进情况0:进行中1:已完成',
   PRIMARY KEY (`id`),
-  KEY `orderinfo-ownerIDByuserinfo-id` (`ownerID`),
-  CONSTRAINT `orderinfo-ownerIDByuserinfo-id` FOREIGN KEY (`ownerID`) REFERENCES `userinfo` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COMMENT='订单信息表';
+  KEY `ownerPhone` (`ownerPhone`),
+  CONSTRAINT `orderinfo_ibfk_1` FOREIGN KEY (`ownerPhone`) REFERENCES `userinfo` (`phone`)
+) ENGINE=InnoDB AUTO_INCREMENT=234235333 DEFAULT CHARSET=utf8 COMMENT='订单信息表';
+
+-- ----------------------------
+-- Records of orderinfo
+-- ----------------------------
+INSERT INTO `orderinfo` VALUES ('234235332', '2017-11-20 01:04:38', '木箱制作', '需要后期协商', '铁大信息', '石家庄东风路', '15832915854', '15732136610', '0');

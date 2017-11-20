@@ -1,0 +1,39 @@
+要先理解例子，在写代码方便合并
+
+统一按照“ServletDemo”项目中的包名来编写接口
+
+
+登录 （手机号）（LoginServlet.doPost）->(UserService.login)->(UserDao.getUserByPhoneAndPassword)->(User)(刘立伟)
+响应字段：status(0:失败   1：成功（User的json）    2：网络异常)
+(User)UserService.login(phone,password)   
+(User)UserDao.getUserByPhoneAndPassword(phone,password)
+
+注册（刚注册时未激活，用一个字段标识）（RegisterServlet.doPost）->(UserService.register)->(UserDao.addUser)（张宇）
+响应字段：status（0：失败  1：成功  2：网络异常）
+(int)UserService.register(...)//打包成User
+(int)UserDao.addUser(User user)
+
+获取订单（ShowOrderServlet.doPost）->(UserService.showAllOrder)->(OrderDao.showAllOrder)->(Order)（李兆轩）
+响应字段：Order[]的json
+(Order[])UserService.showAllOrder()
+(Order[])OrderDao.showAllOrder()
+
+删除订单（DeleteOrderServlet.doPost）->(UserService.deleteOrder)->(OrderDao.deleteOrderByOrderNum)（卢若诗）（陈晓阳）
+响应字段：status（0：失败  1：成功  2：网络异常）
+(int)UserService.deleteOrder(orderNum)
+(int)OrderDao.deleteOrderByOrderNum(orderNum)
+
+修改密码（ChangePasswordServlet.doPost）->(UserService.changePassword)->(UserDao.changePasswordByPhone)（朱峰）（陈雪松）
+响应字段：status（0：失败  1：成功  2：网络异常）
+(int)UserService.changePassword(phone)
+(int)UserDao.changePasswordByPhone(phone)
+
+绑定微信（BindWechatServlet.doPost）->(UserService.bindWechat)->(UserDao.bindWechatByPhone)（赵永真）（王嘉璇）
+响应字段：status（0：失败  1：成功  2：网络异常）
+ (int)UserService.bindWechat(phone)
+ (int)UserDao.bindWechatByPhone(phone)
+
+添加订单（AddOrderServlet.doPost）->(UserService.addOrder)->(OrderDao.addOrder(Order))(张恒)（曹易震）
+订单编号问题（写到文件里面）类名（Tools）方法名（GenerateOrderNum）
+响应字段：status（0：失败  1：成功  2：网络异常）
+
